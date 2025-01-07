@@ -109,7 +109,7 @@ def TTS(client, response):
 
 ### 메인 함수 ###
 def main():
-  st.set_page_config(page_title='openAI API 키인')
+  st.set_page_config(page_title='이미지 분석기 v01')
 
   # 사이드바
   with st.sidebar:
@@ -118,7 +118,7 @@ def main():
 
     # OpenAI API 키 입력 받기
     openai_apikey = st.text_input(
-      label='OPENAI API 키',
+      label='API 키 입력',
       placeholder='Enter Your API Key',
       value='',
       type='password'
@@ -139,7 +139,7 @@ def main():
 
 
   # 메인 공간: 채팅 UI
-  st.title('OpenAI 기반 채팅 봇')
+  st.title('OpenAI 기반 이미지 분석 챗봇')
 
 
   # 이미지 업로드
